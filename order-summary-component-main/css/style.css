@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url('images\pattern-background-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+}
+.container{
+    max-width: 453px;
+    
+}
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: -4px;
+    background-color: white;
+   
+}
+h1{
+    padding: 20px;
+}
+p{
+    padding-right: 63px;
+    margin-left: 85px;
+}
+.flex{
+    display: flex;
+    height: 69px;
+    width: 330px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 13px 68px;
+    /* padding: 45px 0px 45px 81px; */
+    background-color: hsl(225, 100%, 98%);
+}
+.plan-left{
+    display: flex;
+    margin-left: 18px;
+
+}
+.plan-left div{
+    display: inline;
+    margin-left: -63px;
+    margin-top: 1px;
+
+}
+.plan-left div p{
+    line-height: 23px;
+    margin-left: 75px;
+
+}
+.flex a{
+    padding-top: 7px;
+    padding-left: 16px;
+}
+.flex a:hover{
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+    transition:  color .3s ease;
+}
+h5{
+    margin-top: 5px;
+}
+.proceed-btn{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 327px;
+    margin-top: 13px;
+    height: 46px;
+    border-radius: 10px;
+    padding-top: 11px;
+    margin-left: 69px;
+    text-decoration: none;
+    box-shadow
+    transition: background-color .3s ease;
+
+}
+.proceed-btn:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+.cancel-btn{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    display: inline;
+    margin: 21px 0;
+    width: 157px;
+    margin-left: 149px;
+
+}
+.cancel-btn:hover{
+    color:hsl(223, 47%, 23%);
+}
+.image img{
+    height: 101%;
+    object-fit: contain;
+    width: 100%;
+}
+@media only screen and (max-width: 465px)
+{
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        max-width: 87%;
+    }
+    .h1{
+        font-size: 25px
+    }
+    .flex{
+        width: 249px;
+     margin: 13px 35px;
+    }
+    .plan-left{
+        margin-left: 9px;
+    }
+    .plan-left img{
+        width: 35px;
+    height: 44px;
+    }
+    .flex a{
+        margin-left: -32px;
+    }
+    .proceed-btn{
+        width: 246px;
+    margin-left: 36px;
+    }
+    .cancel-btn{
+        width: 107px;
+    margin-left: 101px;
+    }
+    
+}
